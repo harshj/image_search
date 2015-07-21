@@ -1,0 +1,29 @@
+<! doctype html >
+<html>
+
+<head>
+
+	{% load static from staticfiles %}
+		<link href = "{% static 'css/base.css' %}" rel="stylesheet" type = "text/css" />
+	
+	{% block style %}{% endblock %}
+	{% block script %}{% endblock %}
+	
+	<title>
+		{% block title %}{% endblock %}
+	</title>
+	<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<header>Pixvera</header>
+	
+	{% block content %}
+	{% endblock %}
+	
+	<footer></footer>
+</body>
+
+</html>

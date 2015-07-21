@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block style %}
+	{% load static from staticfiles %}
+	<link href= {% static 'css/home.css' %} rel = "stylesheet" />
+{% endblock %}
+
+{% block script %}
+	{% load static from staticfiles %}
+	<script src = {% static 'js/drag_drop.js' %} ></script>
+{% endblock %}
+
+{% block title %}
+	Image Search Engine.
+{% endblock %}
+
+{% block content %}
+ <!--	<form id="upload" action="upload.py" method="POST" enctype="multipart/form-data">
+		<div id="drop" ondrop="drop(event)" ondragover="allowdrop(event)">Drag and Drop</div>
+		<br><br> -->
+		
+		<!-- Show Upload Errors -->
+		{% if upload_error %}
+			<div class = "error" >
+				{{upload_error}}
+			</div>
+		{% endif %}
+		
+		<!-- Show Form -->
+		
+		<form id = "upload" action="" method = "POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{form|linebreaksbr}}
+		<br><br>
+		<input type="submit" value="Upload File" class="upload_button">
+		</form>
+		
+{% endblock %}
