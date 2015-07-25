@@ -1,7 +1,29 @@
+*{
+	background-color: black;	
+}
 
-header{
-	font: 50px italic Liberation Sans Narrow, sans-serif ;
-	text-align:center;
+header div{
+	display: inline-block;
+	border: 1px solid black;
+	margin-left: 40%;
+	position:relative;
+}
+
+header form{
+	display:inline-block;
+	margin-left: 20%;
 	
+}
+
+#search-field{
+	display: inline-block;
+	border-radius: 2px;
+	height: 30px;
+	background-color: white;	
+}
+
+#search-button{
+	background: #3399FF;
+    color: white;
 }
 

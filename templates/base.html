@@ -3,10 +3,12 @@
 
 <head>
 
-	{% load static from staticfiles %}
+	{% load staticfiles %}
 		<link href = "{% static 'css/base.css' %}" rel="stylesheet" type = "text/css" />
+		<link rel="import" href="{% static 'bower_components/paper-elements/paper-elements.html' %}" />
 	
 	{% block style %}{% endblock %}
+	{% block import %}{% endblock %}
 	{% block script %}{% endblock %}
 	
 	<title>
@@ -18,7 +20,18 @@
 </head>
 
 <body>
-	<header>Pixvera</header>
+	<header>
+		{% load staticfiles %}
+		<div><a href="/"><img src="{% static 'images/logo.png' %}" alt="PIXVERA" height="20%"></a></div>
+	
+		<!--<p>Pixvera</p>-->
+	
+	<form>
+		<input label="Search" id="search-field"></paper-input>
+		<paper-button raised id="search-button"> Search</paper-button>
+	</form>
+	
+	</header>
 	
 	{% block content %}
 	{% endblock %}

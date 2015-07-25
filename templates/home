@@ -5,9 +5,8 @@
 	<link href= {% static 'css/home.css' %} rel = "stylesheet" />
 {% endblock %}
 
-{% block script %}
-	{% load static from staticfiles %}
-	<script src = {% static 'js/drag_drop.js' %} ></script>
+{% block import %}
+	<link href = {% static 'bower_components/core-icons/core-icons.html' %}" rel="import" />
 {% endblock %}
 
 {% block title %}
@@ -15,24 +14,10 @@
 {% endblock %}
 
 {% block content %}
- <!--	<form id="upload" action="upload.py" method="POST" enctype="multipart/form-data">
-		<div id="drop" ondrop="drop(event)" ondragover="allowdrop(event)">Drag and Drop</div>
-		<br><br> -->
-		
-		<!-- Show Upload Errors -->
-		{% if upload_error %}
-			<div class = "error" >
-				{{upload_error}}
-			</div>
-		{% endif %}
-		
-		<!-- Show Form -->
-		
-		<form id = "upload" action="" method = "POST" enctype="multipart/form-data">
-		{% csrf_token %}
-		{{form|linebreaksbr}}
-		<br><br>
-		<input type="submit" value="Upload File" class="upload_button">
-		</form>
+	<div class="slideshow">
+		<paper-icon-button icon="arrow-back" style="float:left; margin-left:5%"></paper-icon-button>
+		<div class="image"></div>
+		<paper-icon-button icon="arrow-forward" style="float:right; margin-right:5%"></paper-icon-button>
+	</div>
 		
 {% endblock %}

@@ -1,63 +1,19 @@
-
-#drop{
-	display: block;
-	border: 1px solid black;
-	border-radius: 5px;
-	margin: 50px 10px 10px 70px;
-	height: 100px;
-	width: 80%; 	
-	color: grey;
-	text-align: center;
-	padding: 200px 10px 100px 10px;
-	font: 50px/2px italic ;
+.slideshow{
+	background-color: #3c4240;
+	width: 90%;
+	height: 40%;
+	margin-left: 5%
 }
 
-#drop.hover{
-	display: block;
-	border: 1px dashed green;
-	border-radius: 5px;
-	margin: 50px 10px 10px 70px;
-	height: 100px;
-	width: 80%; 	
-	color: grey;
-	text-align: center;
-	padding: 200px 10px 100px 10px;
-	font: 50px/2px italic ;
+div paper-icon-button {
+	color:white;
+	background-color: #848987;
+	position:relative;
+	margin-top: 10%;
+	border-radius: 100%;
 }
 
-.error{
-	font: 15px italic ;
-	color: red;
-}
-
-#upload{
-	font: 20px italic;
-	margin-left: 30px;
-}
-
-
-.field{
-	margin-left: 20px;
-	font-size: 18px;
-	border-radius: 5px;
-}
-
-.field:hover{
-	color:orange;
-}
-
-.upload_button{
-	display: block;
-	border: 1px solid black;
-	border-radius: 4px;
-	height: 50px;
-	width: 120px;
-	margin-left: 20%;
-	opacity: 0.5;
-	background-color: #E6E6E6;
-	font: 20px bold;
-}
-
-.upload_button:hover{
-	color: green;
+.slideshow div{
+	background-image:  url();
+	
 }
