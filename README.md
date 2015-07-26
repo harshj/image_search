@@ -1,4 +1,5 @@
-This project takes an image as an input and finds all matching images and displays them on the same webpage.
+This is the front-end of a responsive website which takes an image as an input and finds all matching images 
+and displays them on the same webpage.
 
 #Development
 1. Python3

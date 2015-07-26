@@ -3,6 +3,7 @@
 {% block style %}
 	{% load static from staticfiles %}
 	<link href= {% static 'css/home.css' %} rel = "stylesheet" />
+	<link rel="import" href="{% static 'js/slideshow.js' %}"/>
 {% endblock %}
 
 {% block import %}
@@ -15,12 +16,12 @@
 
 {% block content %}
 	<div class="slideshow">
-		<paper-icon-button icon="arrow-back" style="float:left; margin-left:10%"></paper-icon-button>
+		<paper-icon-button icon="arrow-back" style="float:left; margin-left:20%" id="prev_slide"></paper-icon-button>
 		
 		<!-- Slideshow Logic Here-->
-		<img src="" alt="IMAGE SLIDESHOW">
-		
-		<paper-icon-button icon="arrow-forward" style="float:right; margin-right:10%"></paper-icon-button>
+		<img alt="IMAGE SLIDESHOW" name='slide' />
+				
+		<paper-icon-button icon="arrow-forward" style="float:right; margin-right:20%" id="next_slide"></paper-icon-button>
 	
 	</div>
 	
@@ -29,14 +30,14 @@
 		<h2>Overview</h3>
 		<br><hr><br>
 		<!-- Overview Text here -->
-		{% lorem 1 %}
+		<article>{% lorem 1 %}</article>
 	</div>
 	
-	<div id="latest">
+	<aside>
 		<div id="latest-header">Latest Trademarks</div>
-		<div id="latest-item"></div>
-		<div id="latest-item"></div>
-		<div id="latest-item"></div>
-	</div>
+		<article id="latest-item"><img src = {% static 'images/sample.jpg'%} alt="Latest Trademark"><p>{% lorem 10 w %}</p></article>
+		<article id="latest-item"><img src = {% static 'images/sample.jpg'%} alt="Latest Trademark"><p>{% lorem 10 w %}</p></article>
+		<article id="latest-item"><img src = {% static 'images/sample.jpg'%} alt="Latest Trademark"><p>{% lorem 10 w %}</p></article>
+	</aside>
 		
 {% endblock %}
