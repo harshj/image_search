@@ -1,29 +1,40 @@
 *{
-	background-color: black;	
+	background-color: white;	
+	margin: auto;
+}
+
+header{
+	background-color: black;
 }
 
 header div{
 	display: inline-block;
 	border: 1px solid black;
 	margin-left: 40%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 	position:relative;
+	
 }
 
 header form{
 	display:inline-block;
-	margin-left: 20%;
+	float: right;
+	margin-top: 5%;
+	margin-right: 5%;
+	background-color:black;
 	
 }
 
 #search-field{
-	display: inline-block;
 	border-radius: 2px;
 	height: 30px;
-	background-color: white;	
+	background-color: white;
+	box-shadow: 1px 1px 1px #E6E6E6;	
 }
 
 #search-button{
-	background: #3399FF;
+	background-color: #3399FF;
     color: white;
 }
 

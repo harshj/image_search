@@ -15,9 +15,28 @@
 
 {% block content %}
 	<div class="slideshow">
-		<paper-icon-button icon="arrow-back" style="float:left; margin-left:5%"></paper-icon-button>
-		<div class="image"></div>
-		<paper-icon-button icon="arrow-forward" style="float:right; margin-right:5%"></paper-icon-button>
+		<paper-icon-button icon="arrow-back" style="float:left; margin-left:10%"></paper-icon-button>
+		
+		<!-- Slideshow Logic Here-->
+		<img src="" alt="IMAGE SLIDESHOW">
+		
+		<paper-icon-button icon="arrow-forward" style="float:right; margin-right:10%"></paper-icon-button>
+	
+	</div>
+	
+	<br><br>
+	<div id="overview">
+		<h2>Overview</h3>
+		<br><hr><br>
+		<!-- Overview Text here -->
+		{% lorem 1 %}
+	</div>
+	
+	<div id="latest">
+		<div id="latest-header">Latest Trademarks</div>
+		<div id="latest-item"></div>
+		<div id="latest-item"></div>
+		<div id="latest-item"></div>
 	</div>
 		
 {% endblock %}

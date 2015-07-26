@@ -1,8 +1,7 @@
 .slideshow{
 	background-color: #3c4240;
-	width: 90%;
-	height: 40%;
-	margin-left: 5%
+	height: 42%;
+	box-shadow: 5px 5px 4px black;
 }
 
 div paper-icon-button {
@@ -11,9 +10,61 @@ div paper-icon-button {
 	position:relative;
 	margin-top: 10%;
 	border-radius: 100%;
+	box-shadow:1px 2px 3px black;
 }
 
-.slideshow div{
-	background-image:  url();
+.slideshow img{
+	width: 20%;
+	heigth: 20%;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+	margin-left: 25%;
+	color: #848987;
+	background-color: #3c4240;
+	box-shadow: none;
+	text-align: center;
+	font-weight: bold;
+}
+
+h2{
+	color: #3c4240;
+}
+
+hr{
+	color: #3c4240;
+}
+
+div#overview{
+	position: absolute;
+	height: 50%;
+	width: 70%;
+	margin: 0 0 0 2%;
+}
+
+div#latest{
+	height: 50%;
+	width: 20%;
+	background-color: #3c4240;
+	float: right;
+	margin: 0 5% 2% 0;
+	box-shadow:5px 5px 4px black;
 	
+}
+
+#latest-header{
+	position: relative;
+	height: 10%;
+	background-color: #3399FF;
+	box-shadow: 1px 3px 2px black;
+	color: white;
+	font: 22px bold;
+	text-align: center;
+	
+}
+
+#latest-item{
+	position: relative;
+	width: 90%;
+	margin: 3% 4% 1% 4%;
+	background-color: white;
 }
