@@ -5,6 +5,7 @@
 
 header{
 	background-color: black;
+	box-shadow: 4px 4px 5px #4C4C4C;
 }
 
 header div{
@@ -20,15 +21,15 @@ header div{
 header form{
 	display:inline-block;
 	float: right;
-	margin-top: 5%;
-	margin-right: 5%;
+	margin-top: 4%;
+	margin-right: 10%;
 	background-color:black;
 	
 }
 
 #search-field{
 	border-radius: 2px;
-	height: 30px;
+	height: 40px;
 	background-color: white;
 	box-shadow: 1px 1px 1px #E6E6E6;	
 }
@@ -36,5 +37,6 @@ header form{
 #search-button{
 	background-color: #3399FF;
     color: white;
+    border-radius: 0;
 }
 

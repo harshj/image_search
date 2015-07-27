@@ -19,5 +19,6 @@ from image_search import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url('^$', views.home ),
+    url(r'^$', views.home ),
+    url(r'^logo_details/' , views.logo_details),
 ]

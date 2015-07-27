@@ -1,0 +1,52 @@
+#details img{
+	display: inline-block;
+	height: 40%;
+	width: 25%;
+	float: left;
+	margin: 3% 4% 2% 2%;
+	box-shadow: 2px 4px 2px black;
+}
+
+#vertical_sep{
+	display: inline-block;
+	border-left: thick solid grey; 
+	margin: 2% 1% 2% 1%;
+	height:50%;
+}
+
+#details section{
+	display: inline-block;
+	margin: 4% 5% 2% 1%;
+	width: 55%;
+	float: right;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+h1{
+	font-weight: normal;
+	color: #3399FF;
+	font-family: sans-serif;
+	margin: 1% 0 1% 2%;
+}
+
+h1 span{
+	font-size: 150%;	
+
+}
+
+#trademark{
+	display: inline-block;
+	margin: 1% 2% 2% 2%;
+	background-color: #cccccc;
+	height: 30%;
+	width: 15%;
+	box-shadow: 2px 4px 2px black;
+}
+
+#trademark img{
+	height: 80%;
+	width: 80%;
+	margin: 6% 4% 4% 10%;
+	box-shadow: 2px 4px 2px black;
+}

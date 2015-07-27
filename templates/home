@@ -3,11 +3,14 @@
 {% block style %}
 	{% load static from staticfiles %}
 	<link href= {% static 'css/home.css' %} rel = "stylesheet" />
-	<link rel="import" href="{% static 'js/slideshow.js' %}"/>
 {% endblock %}
 
 {% block import %}
 	<link href = {% static 'bower_components/core-icons/core-icons.html' %}" rel="import" />
+{% endblock %}
+
+{% block script%}
+	<link rel="import" href="{% static 'js/slideshow.js' %}"/>
 {% endblock %}
 
 {% block title %}

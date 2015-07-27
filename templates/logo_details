@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block style %}
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'css/logo_details.css' %}" />
+{% endblock %}
+
+{% block title %}Details{% endblock %}
+
+{% block content %}
+
+	<br>
+	<div id="details">
+		<img src="{% static 'images/sample.jpg' %}" alt="Image" />
+		<div id="vertical_sep"></div>
+		<section>{% lorem %}</section>
+	</div>
+	
+	<h1><span>S</span>IMILAR <span>T</span>RADEMARKS</h1>
+	
+	<div id="similar_trademarks">
+		<!-- Sample trademarks. Can be added using django for loop  -->
+		<div id="trademark">
+			<img src="{% static 'images/sample.jpg' %}" alt="Similar Trademark">
+		</div>
+		<div id="trademark">
+			<img src="{% static 'images/sample.jpg' %}" alt="Similar Trademark">
+		</div>
+		<div id="trademark">
+			<img src="{% static 'images/sample.jpg' %}" alt="Similar Trademark">
+		</div>
+		<div id="trademark">
+			<img src="{% static 'images/sample.jpg' %}" alt="Similar Trademark">
+		</div>
+		<div id="trademark">
+			<img src="{% static 'images/sample.jpg' %}" alt="Similar Trademark">
+		</div>
+	</div>
+	
+{% endblock %}
