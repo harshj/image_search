@@ -6,22 +6,13 @@
 header{
 	background-color: black;
 	box-shadow: 4px 4px 5px #4C4C4C;
-}
-
-header div{
-	display: inline-block;
-	border: 1px solid black;
-	margin-left: 40%;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	position:relative;
-	
+	height: 10%;
 }
 
 header form{
 	display:inline-block;
 	float: right;
-	margin-top: 4%;
+	margin-top: 1%;
 	margin-right: 10%;
 	background-color:black;
 	
@@ -40,3 +31,9 @@ header form{
     border-radius: 0;
 }
 
+footer{
+	clear: both;
+	text-align: center;
+	text-decoration: none;
+	color: red;
+}
